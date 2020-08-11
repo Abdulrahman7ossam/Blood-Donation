@@ -2,4 +2,4 @@
 UoB Summer internship program blood donation application project.
 
 # Login Page
-![](screenshots/Login%20Page.png)
+<img src="screenshots/Login%20Page.png" width="300">
