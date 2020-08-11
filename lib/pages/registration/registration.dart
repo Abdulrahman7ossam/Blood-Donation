@@ -24,14 +24,51 @@ class _RegistrationState extends State<Registration> {
           children: [
             _TopGradient(),
             _AppName(),
-            SizedBox(height: 30),
+            SizedBox(height: 20),
             CustomTextField("Name"),
             CustomTextField("Email"),
             CustomTextField("Password"),
             CustomTextField("Phone Number"),
             CustomTextField("CPR"),
+            CustomTextField("Age"),
+            Text("Gender: ", style: TextStyle(fontSize: 18)),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                GenderCheckbox("Male"),
+                GenderCheckbox("Female"),
+              ],
+            )
           ],
         ),
+      ),
+    );
+  }
+}
+
+class GenderCheckbox extends StatefulWidget {
+  final String title;
+
+  GenderCheckbox(this.title);
+
+  @override
+  _GenderCheckboxState createState() => _GenderCheckboxState();
+}
+
+class _GenderCheckboxState extends State<GenderCheckbox> {
+  bool checkedValue = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return Flexible(
+      child: CheckboxListTile(
+        title: Text(widget.title),
+        value: checkedValue,
+        onChanged: (newValue) {
+          setState(() => checkedValue = newValue);
+        },
+        controlAffinity:
+            ListTileControlAffinity.leading, //  <-- leading Checkbox
       ),
     );
   }
