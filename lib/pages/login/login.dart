@@ -21,13 +21,41 @@ class _LoginState extends State<Login> {
                 SizedBox(height: 20),
                 CustomTextField("password"),
                 SizedBox(height: 20),
-                FlatButton(
-                  child: Text("Login"),
-                  onPressed: () {},
-                ),
+                LoginButton(),
               ],
             ),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class LoginButton extends StatefulWidget {
+  @override
+  _LoginButtonState createState() => _LoginButtonState();
+}
+
+class _LoginButtonState extends State<LoginButton> {
+  @override
+  Widget build(BuildContext context) {
+    return RaisedButton(
+      color: Color(0xEEDF473C),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(25.7),
+      ),
+      padding: EdgeInsets.all(9.0),
+      onPressed: () {},
+      child: Container(
+        width: 280,
+        child: Text(
+          "Login",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontSize: 22.0,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
         ),
       ),
     );
@@ -51,10 +79,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
       child: TextField(
         autofocus: false,
         textAlign: TextAlign.center,
-        style: TextStyle(
-          fontSize: 22.0,
-          color: Color(0xFFbdc6cf),
-        ),
+        style: TextStyle(fontSize: 22.0),
         decoration: InputDecoration(
           border: InputBorder.none,
           filled: true,
