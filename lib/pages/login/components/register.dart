@@ -25,6 +25,7 @@ class _RegisterState extends State<Register> {
           ),
           onPressed: () {
             print("Register button pressed");
+            Navigator.pushNamed(context, "/Registration");
           },
         ),
         SizedBox(height: 40),

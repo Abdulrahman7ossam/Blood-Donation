@@ -8,6 +8,6 @@ class Registration extends StatefulWidget {
 class _RegistrationState extends State<Registration> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }

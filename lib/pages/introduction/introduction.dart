@@ -8,6 +8,6 @@ class Introduction extends StatefulWidget {
 class _IntroductionState extends State<Introduction> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
