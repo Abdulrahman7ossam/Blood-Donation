@@ -162,15 +162,27 @@ class LoginPageHeader extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        SizedBox(height: 40),
-        Image.asset('assets/blood-bag.png', height: 150, width: 150),
+        Image.asset('assets/blood-transfusion.png', height: 200, width: 200),
+        SizedBox(height: 30),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              "عطاء",
-              style: TextStyle(
-                  fontSize: 64, fontWeight: FontWeight.bold, color: Colors.red),
+            Stack(
+              alignment: Alignment(0.5, 0.8),
+              children: [
+                Text(
+                  "عطاء",
+                  style: TextStyle(
+                    fontSize: 64,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.red,
+                  ),
+                ),
+                Text(
+                  "تبرع بالدم",
+                  style: TextStyle(fontSize: 18.0, color: Color(0xEE445464)),
+                ),
+              ],
             ),
           ],
         ),
