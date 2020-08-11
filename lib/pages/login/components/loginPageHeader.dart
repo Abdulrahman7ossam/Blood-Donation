@@ -9,8 +9,7 @@ class LoginPageHeader extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        Image.asset('assets/blood-transfusion.png', height: 220, width: 220),
-        SizedBox(height: 30),
+        _TopImageHeader(),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -35,5 +34,49 @@ class LoginPageHeader extends StatelessWidget {
         ),
       ],
     );
+  }
+}
+
+class _TopImageHeader extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return ClipPath(
+      clipper: MyClipper(),
+      child: Container(
+        height: 250,
+        width: double.infinity,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Color(0xFFFF217A),
+              Color(0xFFFF4D4D),
+            ],
+          ),
+          image: DecorationImage(
+            image: AssetImage("assets/blood-transfusion.png"),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class MyClipper extends CustomClipper<Path> {
+  @override
+  Path getClip(Size size) {
+    var path = Path();
+    path.lineTo(0, size.height - 80);
+    path.quadraticBezierTo(
+        size.width / 2, size.height, size.width, size.height - 80);
+    path.lineTo(size.width, 0);
+    path.close();
+    return path;
+  }
+
+  @override
+  bool shouldReclip(CustomClipper<Path> oldClipper) {
+    return false;
   }
 }
