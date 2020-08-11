@@ -8,24 +8,6 @@ void main() {
       routes: routesAsWidgetBuilder,
       theme: ThemeData(fontFamily: "ProximaNova"),
       initialRoute: '/Login',
-      home: MyApp(),
     ),
   );
-}
-
-class MyApp extends StatefulWidget {
-  @override
-  _MyAppState createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      extendBody: true,
-      body: SafeArea(
-        child: Scaffold(),
-      ),
-    );
-  }
 }
