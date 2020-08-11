@@ -7,7 +7,7 @@ void main() {
       debugShowCheckedModeBanner: false,
       routes: routesAsWidgetBuilder,
       theme: ThemeData(fontFamily: "ProximaNova"),
-      initialRoute: '/Registration',
+      initialRoute: '/Login',
       home: MyApp(),
     ),
   );
