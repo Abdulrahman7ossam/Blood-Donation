@@ -26,7 +26,7 @@ class _LoginButtonState extends State<LoginButton> {
           "Login",
           textAlign: TextAlign.center,
           style: TextStyle(
-            fontSize: 22.0,
+            fontSize: 20.0,
             fontWeight: FontWeight.bold,
             color: Colors.white,
           ),

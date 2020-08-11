@@ -44,7 +44,7 @@ class _TopImageHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipPath(
-      clipper: MyClipper(),
+      clipper: _MyClipper(),
       child: Container(
         height: 250,
         width: double.infinity,
@@ -66,7 +66,8 @@ class _TopImageHeader extends StatelessWidget {
   }
 }
 
-class MyClipper extends CustomClipper<Path> {
+/// Custom path clipper.
+class _MyClipper extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
     var path = Path();

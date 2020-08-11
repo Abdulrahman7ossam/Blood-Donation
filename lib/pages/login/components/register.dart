@@ -16,7 +16,7 @@ class _RegisterState extends State<Register> {
         ),
         MaterialButton(
           child: Text(
-            "Register",
+            "REGISTER",
             style: TextStyle(
               fontSize: 20.0,
               fontWeight: FontWeight.bold,
