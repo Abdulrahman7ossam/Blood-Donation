@@ -23,29 +23,15 @@ class _LoginState extends State<Login> {
               children: [
                 const LoginPageHeader(),
                 SizedBox(height: 40),
-                _InputsBlock(),
+                CustomTextField("username"),
+                CustomTextField("password"),
+                LoginButton(),
               ],
             ),
             Register(),
           ],
         ),
       ),
-    );
-  }
-}
-
-class _InputsBlock extends StatelessWidget {
-  /// Contains username and password textFields, and Login button.
-  _InputsBlock();
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        CustomTextField("username"),
-        CustomTextField("password"),
-        LoginButton(),
-      ],
     );
   }
 }
