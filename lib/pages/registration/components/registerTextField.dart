@@ -20,12 +20,11 @@ class _CustomTextFieldState extends State<CustomTextField> {
           child: TextField(
             autofocus: false,
             textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 22.0),
+            style: TextStyle(fontSize: 18.0),
             decoration: InputDecoration(
               border: InputBorder.none,
               filled: true,
-              contentPadding:
-                  const EdgeInsets.only(left: 14.0, bottom: 8.0, top: 8.0),
+              contentPadding: const EdgeInsets.only(left: 14.0),
               focusedBorder: OutlineInputBorder(
                 borderSide: BorderSide(color: Colors.white),
                 borderRadius: BorderRadius.circular(25.7),

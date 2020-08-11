@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:blood_donation/components/customTextField.dart';
+import 'package:blood_donation/pages/registration/components/registerTextField.dart';
 
 class Registration extends StatefulWidget {
   @override
@@ -11,6 +11,7 @@ class _RegistrationState extends State<Registration> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        resizeToAvoidBottomInset: false,
         appBar: AppBar(
           backgroundColor: Color(0xFFFF217A),
           elevation: 0,
