@@ -10,6 +10,7 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        resizeToAvoidBottomInset: false,
         backgroundColor: Colors.white,
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -162,7 +163,7 @@ class LoginPageHeader extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        Image.asset('assets/blood-transfusion.png', height: 200, width: 200),
+        Image.asset('assets/blood-transfusion.png', height: 220, width: 220),
         SizedBox(height: 30),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
