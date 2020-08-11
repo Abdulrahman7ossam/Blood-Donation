@@ -12,18 +12,16 @@ class _LoginState extends State<Login> {
       child: Scaffold(
         backgroundColor: Colors.white,
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const LoginPageHeader(),
-            SizedBox(height: 40),
             Column(
               children: [
-                CustomTextField("username"),
-                SizedBox(height: 20),
-                CustomTextField("password"),
-                SizedBox(height: 20),
-                LoginButton(),
+                const LoginPageHeader(),
+                SizedBox(height: 40),
+                _InputsBlock(),
               ],
             ),
+            Register(),
           ],
         ),
       ),
@@ -31,7 +29,59 @@ class _LoginState extends State<Login> {
   }
 }
 
+class Register extends StatefulWidget {
+  @override
+  _RegisterState createState() => _RegisterState();
+}
+
+class _RegisterState extends State<Register> {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text("Dont have an account yet?",
+            style: TextStyle(color: Color(0xEE9EA8B0), fontSize: 18.0)),
+        MaterialButton(
+          child: Text(
+            "Register",
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.red,
+            ),
+          ),
+          onPressed: () {
+            print("Register button pressed");
+          },
+        ),
+        SizedBox(height: 40),
+      ],
+    );
+  }
+}
+
+class _InputsBlock extends StatelessWidget {
+  /// Contains username and password textFields, and Login button.
+  _InputsBlock();
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        CustomTextField("username"),
+        SizedBox(height: 20),
+        CustomTextField("password"),
+        SizedBox(height: 20),
+        LoginButton(),
+      ],
+    );
+  }
+}
+
 class LoginButton extends StatefulWidget {
+  /// Login Button
+  LoginButton();
+
   @override
   _LoginButtonState createState() => _LoginButtonState();
 }
@@ -45,7 +95,9 @@ class _LoginButtonState extends State<LoginButton> {
         borderRadius: BorderRadius.circular(25.7),
       ),
       padding: EdgeInsets.all(9.0),
-      onPressed: () {},
+      onPressed: () {
+        print("Login Button Pressed");
+      },
       child: Container(
         width: 280,
         child: Text(
@@ -65,6 +117,7 @@ class _LoginButtonState extends State<LoginButton> {
 class CustomTextField extends StatefulWidget {
   final String hintText;
 
+  /// Textfield for username and password fields.
   CustomTextField(this.hintText);
 
   @override
@@ -101,6 +154,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
 }
 
 class LoginPageHeader extends StatelessWidget {
+  /// Contains blood-bag image and application title.
   const LoginPageHeader();
 
   @override
@@ -116,9 +170,7 @@ class LoginPageHeader extends StatelessWidget {
             Text(
               "عطاء",
               style: TextStyle(
-                  fontSize: 64,
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xEEDF473C)),
+                  fontSize: 64, fontWeight: FontWeight.bold, color: Colors.red),
             ),
           ],
         ),
