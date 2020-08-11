@@ -9,7 +9,7 @@ class LoginPageHeader extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        _TopImageHeader(),
+        const _TopImageHeader(),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -26,7 +26,7 @@ class LoginPageHeader extends StatelessWidget {
                 ),
                 Text(
                   "تبرع بالدم",
-                  style: TextStyle(fontSize: 18.0, color: Color(0xEE445464)),
+                  style: TextStyle(fontSize: 18.0, color: Color(0xFF445464)),
                 ),
               ],
             ),
@@ -38,6 +38,9 @@ class LoginPageHeader extends StatelessWidget {
 }
 
 class _TopImageHeader extends StatelessWidget {
+  /// Background clipped gradient on Login page.
+  const _TopImageHeader();
+
   @override
   Widget build(BuildContext context) {
     return ClipPath(
@@ -76,7 +79,5 @@ class MyClipper extends CustomClipper<Path> {
   }
 
   @override
-  bool shouldReclip(CustomClipper<Path> oldClipper) {
-    return false;
-  }
+  bool shouldReclip(CustomClipper<Path> oldClipper) => false;
 }

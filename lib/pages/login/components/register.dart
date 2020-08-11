@@ -10,8 +10,10 @@ class _RegisterState extends State<Register> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text("Dont have an account yet?",
-            style: TextStyle(color: Color(0xEE9EA8B0), fontSize: 18.0)),
+        Text(
+          "Dont have an account yet?",
+          style: TextStyle(color: Color(0xFF9EA8B0), fontSize: 18.0),
+        ),
         MaterialButton(
           child: Text(
             "Register",
