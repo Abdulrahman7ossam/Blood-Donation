@@ -23,26 +23,83 @@ class _RegistrationState extends State<Registration> {
         body: Column(
           children: [
             _TopGradient(),
-            _AppName(),
-            SizedBox(height: 20),
             CustomTextField("Name"),
             CustomTextField("Email"),
             CustomTextField("Password"),
             CustomTextField("Phone Number"),
             CustomTextField("CPR"),
-            CustomTextField("Age"),
-            Text("Gender: ", style: TextStyle(fontSize: 18)),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                GenderCheckbox("Male"),
-                GenderCheckbox("Female"),
-              ],
-            )
+            CustomTextField("Date of Birth"),
+            GenderSelection(),
+            SizedBox(height: 20),
+            NextPageButton(),
           ],
         ),
       ),
     );
+  }
+}
+
+class NextPageButton extends StatefulWidget {
+  /// NextPageButton Button
+  NextPageButton();
+
+  @override
+  _NextPageButtonState createState() => _NextPageButtonState();
+}
+
+class _NextPageButtonState extends State<NextPageButton> {
+  @override
+  Widget build(BuildContext context) {
+    return RaisedButton(
+      color: Colors.red,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(25.7),
+      ),
+      padding: EdgeInsets.all(9.0),
+      onPressed: () {
+        print("Next Page Button Pressed");
+      },
+      child: Container(
+        width: 280,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              "Next Page",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 22.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
+            Icon(
+              Icons.arrow_forward_ios,
+              color: Colors.white,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class GenderSelection extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(children: [
+      Text("Gender: ", style: TextStyle(fontSize: 18)),
+      Container(
+        width: 300,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            GenderCheckbox("Male"),
+            GenderCheckbox("Female"),
+          ],
+        ),
+      ),
+    ]);
   }
 }
 
@@ -79,21 +136,26 @@ class _AppName extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Stack(
-          alignment: Alignment(0.5, 0.8),
+          alignment: Alignment(0.2, 0.8),
           children: [
             Text(
               "عطاء",
               style: TextStyle(
                 fontSize: 64,
                 fontWeight: FontWeight.bold,
-                color: Colors.red,
+                color: Colors.white,
               ),
             ),
             Text(
-              "تبرع بالدم",
-              style: TextStyle(fontSize: 18.0, color: Color(0xFF445464)),
+              "Sign Up",
+              style: TextStyle(
+                fontSize: 18.0,
+                color: Color(0xFF445464),
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ],
         ),
@@ -111,7 +173,7 @@ class _TopGradient extends StatelessWidget {
     return ClipPath(
       clipper: _MyClipper(),
       child: Container(
-        height: 100,
+        height: 150,
         width: double.infinity,
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -123,6 +185,7 @@ class _TopGradient extends StatelessWidget {
             ],
           ),
         ),
+        child: _AppName(),
       ),
     );
   }
