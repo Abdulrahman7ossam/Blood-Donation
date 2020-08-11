@@ -12,7 +12,7 @@ class _LoginButtonState extends State<LoginButton> {
   @override
   Widget build(BuildContext context) {
     return RaisedButton(
-      color: Color(0xEEDF473C),
+      color: Colors.red,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(25.7),
       ),
