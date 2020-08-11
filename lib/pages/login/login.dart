@@ -43,9 +43,7 @@ class _InputsBlock extends StatelessWidget {
     return Column(
       children: [
         CustomTextField("username"),
-        SizedBox(height: 20),
         CustomTextField("password"),
-        SizedBox(height: 20),
         LoginButton(),
       ],
     );
