@@ -56,9 +56,10 @@ class FactOfTheDay extends StatelessWidget {
             child: Text(
               "The average adult has 10 to 12 pints of blood in their body.",
               style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18.0,
-                  color: Colors.black),
+                fontWeight: FontWeight.bold,
+                fontSize: 18.0,
+                color: Colors.black,
+              ),
             ),
           ),
         ),
@@ -75,7 +76,7 @@ class FactOfTheDay extends StatelessWidget {
         fit: BoxFit.cover,
         alignment: Alignment.topCenter,
         colorFilter: ColorFilter.mode(
-          Colors.black.withOpacity(0.5),
+          Colors.black.withOpacity(0.6),
           BlendMode.dstATop,
         ),
       ),
