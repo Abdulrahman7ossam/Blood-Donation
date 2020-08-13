@@ -19,6 +19,7 @@ class _NextPageButtonState extends State<NextPageButton> {
       padding: EdgeInsets.all(9.0),
       onPressed: () {
         print("Next Page Button Pressed");
+        Navigator.pushNamed(context, "/Registration2");
       },
       child: Container(
         width: 280,

@@ -5,6 +5,7 @@ import 'package:blood_donation/pages/introduction/introduction.dart';
 import 'package:blood_donation/pages/profile/profile.dart';
 import 'package:blood_donation/pages/login/login.dart';
 import 'package:blood_donation/pages/registration/registration.dart';
+import 'package:blood_donation/pages/registration/registration2.dart';
 
 /// Routes as Map<String, WidgetBuilder>.
 /// Used for the route parameter in MaterialApp.
@@ -16,4 +17,5 @@ final Map<String, WidgetBuilder> routesAsWidgetBuilder =
   '/Profile': (context) => Profile(),
   '/Login': (context) => Login(),
   '/Registration': (context) => Registration(),
+  '/Registration2': (context) => Registration2(),
 };
