@@ -23,11 +23,12 @@ class _LoginButtonState extends State<LoginButton> {
       },
       child: Container(
         width: 280,
+        height: 30,
         child: Text(
           "Login",
           textAlign: TextAlign.center,
           style: TextStyle(
-            fontSize: 20.0,
+            fontSize: 22.0,
             fontWeight: FontWeight.bold,
             color: Colors.white,
           ),
