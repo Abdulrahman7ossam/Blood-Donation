@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:blood_donation/main.dart';
 import 'package:blood_donation/pages/homePage/homePage.dart';
 import 'package:blood_donation/pages/information/information.dart';
 import 'package:blood_donation/pages/introduction/introduction.dart';
@@ -22,4 +23,13 @@ final Map<String, WidgetBuilder> routesAsWidgetBuilder =
   '/Registration2': (context) => Registration2(),
   '/Registration3': (context) => Registration3(),
   '/Registration4': (context) => Registration4(),
+  '/MyApp': (context) => MyApp(),
+};
+
+/// Routes as Map<String, Widget>.
+final Map<String, Widget> routesAsWidgets = {
+  '/HomePage': HomePage(),
+  '/Information': Information(),
+  '/Profile': Profile(),
+  '/MyApp': MyApp(),
 };
