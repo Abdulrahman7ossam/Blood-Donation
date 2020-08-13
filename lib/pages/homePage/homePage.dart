@@ -1,8 +1,8 @@
 import 'package:blood_donation/pages/homePage/components/backgroundGradient.dart';
-import 'package:flutter/material.dart';
+import 'package:blood_donation/pages/homePage/components/donateButton.dart';
 import 'package:blood_donation/pages/homePage/components/donationsLivesSaved.dart';
 import 'package:blood_donation/pages/homePage/components/nextDonationWindow.dart';
-import 'package:blood_donation/pages/homePage/components/donateButton.dart';
+import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
   @override

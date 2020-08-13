@@ -1,14 +1,14 @@
-import 'package:flutter/widgets.dart';
 import 'package:blood_donation/main.dart';
 import 'package:blood_donation/pages/homePage/homePage.dart';
 import 'package:blood_donation/pages/information/information.dart';
 import 'package:blood_donation/pages/introduction/introduction.dart';
-import 'package:blood_donation/pages/profile/profile.dart';
 import 'package:blood_donation/pages/login/login.dart';
+import 'package:blood_donation/pages/profile/profile.dart';
 import 'package:blood_donation/pages/registration/registration.dart';
 import 'package:blood_donation/pages/registration/registration2.dart';
 import 'package:blood_donation/pages/registration/registration3.dart';
 import 'package:blood_donation/pages/registration/registration4.dart';
+import 'package:flutter/widgets.dart';
 
 /// Routes as Map<String, WidgetBuilder>.
 /// Used for the route parameter in MaterialApp.

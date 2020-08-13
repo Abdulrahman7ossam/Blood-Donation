@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class _DonateButton extends StatefulWidget {
+class DonateButton extends StatefulWidget {
   @override
-  __DonateButtonState createState() => __DonateButtonState();
+  _DonateButtonState createState() => _DonateButtonState();
 }
 
-class __DonateButtonState extends State<_DonateButton> {
+class _DonateButtonState extends State<DonateButton> {
   @override
   Widget build(BuildContext context) {
     return Row(
