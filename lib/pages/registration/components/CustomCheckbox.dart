@@ -17,7 +17,8 @@ class _CustomCheckboxState extends State<CustomCheckbox> {
   Widget build(BuildContext context) {
     return Flexible(
       child: CheckboxListTile(
-        title: Text(widget.title),
+        title:
+            Text(widget.title, style: TextStyle(fontWeight: FontWeight.bold)),
         value: checkedValue,
         onChanged: (newValue) {
           setState(() => checkedValue = newValue);
