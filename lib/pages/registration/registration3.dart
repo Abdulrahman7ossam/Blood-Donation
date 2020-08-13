@@ -1,16 +1,15 @@
 import 'package:blood_donation/pages/registration/components/nextPageButton.dart';
 import 'package:blood_donation/pages/registration/components/registrationHeader.dart';
 import 'package:flutter/material.dart';
-import 'package:blood_donation/pages/registration/components/registerTextField.dart';
 
-import 'components/CustomCheckbox.dart';
+import 'package:blood_donation/pages/registration/components/CustomCheckbox.dart';
 
-class Registration2 extends StatefulWidget {
+class Registration3 extends StatefulWidget {
   @override
-  _Registration2State createState() => _Registration2State();
+  _Registration3State createState() => _Registration3State();
 }
 
-class _Registration2State extends State<Registration2> {
+class _Registration3State extends State<Registration3> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -28,7 +27,7 @@ class _Registration2State extends State<Registration2> {
           children: [
             RegistrationHeader(),
             Text(
-              "Do you suffer from any of the \nfollowing conditions? (1)",
+              "Do you suffer from any of the \nfollowing conditions? (2)",
               style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
             ),
