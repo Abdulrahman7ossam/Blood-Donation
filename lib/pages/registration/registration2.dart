@@ -12,26 +12,24 @@ class Registration2 extends StatefulWidget {
 class _Registration2State extends State<Registration2> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        resizeToAvoidBottomInset: false,
-        appBar: AppBar(
-          backgroundColor: Color(0xFFFF217A),
-          elevation: 0,
-          leading: IconButton(
-            icon: Icon(Icons.arrow_back, color: Colors.white),
-            onPressed: () => Navigator.pop(context),
-          ),
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
+      appBar: AppBar(
+        backgroundColor: Color(0xFFFF217A),
+        elevation: 0,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () => Navigator.pop(context),
         ),
-        body: Column(
-          children: [
-            RegistrationHeader(),
-            const _PageContents(),
-            _CheckBoxes(),
-            NextPageButton('/Registration3'),
-            SizedBox(height: 30),
-          ],
-        ),
+      ),
+      body: Column(
+        children: [
+          RegistrationHeader(),
+          const _PageContents(),
+          _CheckBoxes(),
+          NextPageButton('/Registration3'),
+          SizedBox(height: 30),
+        ],
       ),
     );
   }

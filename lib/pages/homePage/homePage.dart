@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
           const BackgroundGradient(),
           Column(
             children: [
-              SizedBox(height: 30),
+              SizedBox(height: 50),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
@@ -92,7 +92,7 @@ class _NextDonationWindow extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        SizedBox(height: 250),
+        SizedBox(height: 280),
         Text(
           "Donation Window : ",
           style: TextStyle(
@@ -131,7 +131,7 @@ class __ScheduleAnApointmentButtonState
         Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            SizedBox(height: 170),
+            SizedBox(height: 180),
             FlatButton(
               color: Colors.white,
               child: Padding(
@@ -166,7 +166,7 @@ class BackgroundGradient extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 250.0,
+      height: 260.0,
       width: double.infinity,
       decoration: BoxDecoration(
         // borderRadius: BorderRadius.only(

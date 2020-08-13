@@ -12,25 +12,23 @@ class Login extends StatefulWidget {
 class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        resizeToAvoidBottomInset: false,
-        backgroundColor: Colors.white,
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Column(
-              children: [
-                const LoginPageHeader(),
-                SizedBox(height: 40),
-                CustomTextField("username"),
-                CustomTextField("password"),
-                LoginButton(),
-              ],
-            ),
-            Register(),
-          ],
-        ),
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
+      backgroundColor: Colors.white,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Column(
+            children: [
+              const LoginPageHeader(),
+              SizedBox(height: 40),
+              CustomTextField("username"),
+              CustomTextField("password"),
+              LoginButton(),
+            ],
+          ),
+          Register(),
+        ],
       ),
     );
   }

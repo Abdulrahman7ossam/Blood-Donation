@@ -33,7 +33,7 @@ class _MyAppState extends State<MyApp> {
     return Scaffold(
       extendBody: true,
       bottomNavigationBar: customNavigationBar(_selectedIndex, _onItemTapped),
-      body: SafeArea(child: _pageOptions[_selectedIndex]),
+      body: _pageOptions[_selectedIndex],
     );
   }
 

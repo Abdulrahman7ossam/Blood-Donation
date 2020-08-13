@@ -10,25 +10,23 @@ class Registration4 extends StatefulWidget {
 class _Registration4State extends State<Registration4> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        resizeToAvoidBottomInset: false,
-        appBar: AppBar(
-          backgroundColor: Color(0xFFFF217A),
-          elevation: 0,
-          leading: IconButton(
-            icon: Icon(Icons.arrow_back, color: Colors.white),
-            onPressed: () => Navigator.pop(context),
-          ),
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
+      appBar: AppBar(
+        backgroundColor: Color(0xFFFF217A),
+        elevation: 0,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () => Navigator.pop(context),
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            RegistrationHeader(),
-            _FinishedBlock(),
-            SizedBox(height: 80),
-          ],
-        ),
+      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          RegistrationHeader(),
+          _FinishedBlock(),
+          SizedBox(height: 80),
+        ],
       ),
     );
   }
