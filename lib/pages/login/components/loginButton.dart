@@ -18,7 +18,7 @@ class _LoginButtonState extends State<LoginButton> {
       ),
       padding: EdgeInsets.all(9.0),
       onPressed: () {
-        Navigator.pushNamed(context, '/HomePage');
+        Navigator.pushNamed(context, '/MyApp');
         print("Login Button Pressed");
       },
       child: Container(

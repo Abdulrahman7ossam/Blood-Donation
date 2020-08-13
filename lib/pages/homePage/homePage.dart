@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+//TODO: Last time donated card.
+
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();

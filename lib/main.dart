@@ -8,7 +8,7 @@ void main() {
       debugShowCheckedModeBanner: false,
       routes: routesAsWidgetBuilder,
       theme: ThemeData(fontFamily: "ProximaNova"),
-      initialRoute: '/MyApp',
+      initialRoute: '/Login',
     ),
   );
 }

@@ -45,7 +45,7 @@ class _FinishedBlock extends StatelessWidget {
           textAlign: TextAlign.center,
         ),
         SizedBox(height: 20),
-        FinishButton('/HomePage'),
+        FinishButton('/MyApp'),
         SizedBox(height: 30),
       ],
     );
