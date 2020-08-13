@@ -32,7 +32,7 @@ class _NumberOfTimesBloodWasUsed extends StatelessWidget {
           ),
         ),
         Text(
-          "0",
+          "1",
           style: TextStyle(
             color: Colors.green,
             fontWeight: FontWeight.bold,
@@ -58,7 +58,7 @@ class _NumberOfDonations extends StatelessWidget {
           ),
         ),
         Text(
-          "0",
+          "4",
           style: TextStyle(
             color: Colors.green,
             fontWeight: FontWeight.bold,
