@@ -6,35 +6,23 @@ Widget customNavigationBar(int selectedIndex, Function onItemTapped) {
     type: BottomNavigationBarType.fixed,
     iconSize: 30,
     items: navigationBarItems,
-    elevation: 8,
+    elevation: 0,
     currentIndex: selectedIndex,
     selectedItemColor: Colors.red[400],
     onTap: onItemTapped,
     unselectedFontSize: 14.0,
+    showSelectedLabels: false,
+    showUnselectedLabels: false,
   );
 }
 
 List<BottomNavigationBarItem> navigationBarItems = [
   // Information Tab
-  BottomNavigationBarItem(
-    icon: Icon(Icons.date_range),
-    title: Container(
-      child: Column(children: <Widget>[
-        SizedBox(height: 5),
-        Text("Information"),
-      ]),
-    ),
-  ),
+  BottomNavigationBarItem(icon: Icon(Icons.info), title: Text("Information")),
 
   // HomePage Tab
-  BottomNavigationBarItem(
-    icon: Icon(Icons.home),
-    title: Text('HomePage'),
-  ),
+  BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home Page')),
 
   // Profile Tab
-  BottomNavigationBarItem(
-    icon: Icon(Icons.person),
-    title: Text('Profile'),
-  ),
+  BottomNavigationBarItem(icon: Icon(Icons.person), title: Text('Profile')),
 ];
