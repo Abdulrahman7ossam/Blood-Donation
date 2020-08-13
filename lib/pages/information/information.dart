@@ -9,7 +9,8 @@ class _InformationState extends State<Information> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text("Information"),
+      body: Text("Information",
+          style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold)),
     );
   }
 }

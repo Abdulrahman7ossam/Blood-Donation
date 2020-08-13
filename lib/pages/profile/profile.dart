@@ -9,7 +9,8 @@ class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text("Profile"),
+      body: Text("Profile",
+          style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold)),
     );
   }
 }
