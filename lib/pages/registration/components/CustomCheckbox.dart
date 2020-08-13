@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
-class GenderCheckbox extends StatefulWidget {
+class CustomCheckbox extends StatefulWidget {
   final String title;
 
-  GenderCheckbox(this.title);
+  /// Checkbox that acceps custom text.
+  CustomCheckbox(this.title);
 
   @override
-  _GenderCheckboxState createState() => _GenderCheckboxState();
+  _CustomCheckboxState createState() => _CustomCheckboxState();
 }
 
-class _GenderCheckboxState extends State<GenderCheckbox> {
+class _CustomCheckboxState extends State<CustomCheckbox> {
   bool checkedValue = false;
 
   @override

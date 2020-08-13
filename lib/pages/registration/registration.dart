@@ -1,4 +1,4 @@
-import 'package:blood_donation/pages/registration/components/GenderCheckbox.dart';
+import 'package:blood_donation/pages/registration/components/CustomCheckbox.dart';
 import 'package:blood_donation/pages/registration/components/nextPageButton.dart';
 import 'package:blood_donation/pages/registration/components/registrationHeader.dart';
 import 'package:flutter/material.dart';
@@ -34,7 +34,7 @@ class _RegistrationState extends State<Registration> {
             CustomTextField("Date of Birth"),
             GenderSelection(),
             SizedBox(height: 20),
-            NextPageButton(),
+            NextPageButton('/Registration2'),
           ],
         ),
       ),
@@ -52,8 +52,8 @@ class GenderSelection extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            GenderCheckbox("Male"),
-            GenderCheckbox("Female"),
+            CustomCheckbox("Male"),
+            CustomCheckbox("Female"),
           ],
         ),
       ),
