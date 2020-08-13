@@ -35,14 +35,14 @@ class _Registration3State extends State<Registration3> {
             Expanded(
               child: SingleChildScrollView(
                 child: Text(
-                  "AIDS\n Asthma\n Babesiosis\n Blood disorders or bleeding tendencies\n Brain or spinal surgery that required a transplant of brain covering (dura mater)\n Creutzfeldt-Jakob Disease (CJD)\n Cancer\n Colds\n fever\n flu\n sore throat\n Colitis\n Colostomy\n Dementia\n Emphysema\n Filariasis\n Hemochromatosis\n Leprosy\n Seizures in the last five Years\n Strokes\n Hyperthyroid\n Tuberculosis",
+                  "Allergies\n Anemia\n Arthritis\n Blood Pressure\n Bronchitis\n Chicken Pox\n Chlamydia\n Dermatitis\n Diabetes\n Diarrhea\n Eczema\n Food Poisoning\n Gastroenteritis\n Gall Stone\n Gonorrhea/Syphilis\n Heart attack\n Herpes (genital)\n Malaria; had Malaria in last three years\n Pregnancy and Miscarriage\n Spondylosis\n Hypothyroid\n Viral Infection\n Worms",
                   style: TextStyle(fontSize: 20),
                   textAlign: TextAlign.center,
                 ),
               ),
             ),
             CheckBoxes(),
-            NextPageButton('/Registration3'),
+            NextPageButton('/Registration4'),
             SizedBox(height: 30),
           ],
         ),
