@@ -31,5 +31,4 @@ final Map<String, Widget> routesAsWidgets = {
   '/HomePage': HomePage(),
   '/Information': Information(),
   '/Profile': Profile(),
-  '/MyApp': MyApp(),
 };

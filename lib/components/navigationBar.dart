@@ -4,12 +4,13 @@ import 'package:flutter/material.dart';
 Widget customNavigationBar(int selectedIndex, Function onItemTapped) {
   return BottomNavigationBar(
     type: BottomNavigationBarType.fixed,
-    iconSize: 40,
+    iconSize: 30,
     items: navigationBarItems,
     elevation: 8,
     currentIndex: selectedIndex,
-    selectedItemColor: Colors.red,
+    selectedItemColor: Colors.red[400],
     onTap: onItemTapped,
+    unselectedFontSize: 14.0,
   );
 }
 
