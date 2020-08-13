@@ -32,7 +32,7 @@ class _RegistrationState extends State<Registration> {
             CustomTextField("Phone Number"),
             CustomTextField("CPR"),
             CustomTextField("Date of Birth"),
-            GenderSelection(),
+            _GenderSelection(),
             SizedBox(height: 20),
             NextPageButton('/Registration2'),
           ],
@@ -42,7 +42,7 @@ class _RegistrationState extends State<Registration> {
   }
 }
 
-class GenderSelection extends StatelessWidget {
+class _GenderSelection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(children: [
