@@ -1,7 +1,6 @@
 import 'package:blood_donation/pages/registration/components/nextPageButton.dart';
 import 'package:blood_donation/pages/registration/components/registrationHeader.dart';
 import 'package:flutter/material.dart';
-import 'package:blood_donation/pages/registration/components/registerTextField.dart';
 
 import 'components/CustomCheckbox.dart';
 

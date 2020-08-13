@@ -1,5 +1,4 @@
 import 'package:blood_donation/pages/registration/components/finishButton.dart';
-import 'package:blood_donation/pages/registration/components/nextPageButton.dart';
 import 'package:blood_donation/pages/registration/components/registrationHeader.dart';
 import 'package:flutter/material.dart';
 
@@ -23,19 +22,32 @@ class _Registration4State extends State<Registration4> {
           ),
         ),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             RegistrationHeader(),
-            Text(
-              "You have succsessfully signed up!",
-              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-              textAlign: TextAlign.center,
-            ),
-            SizedBox(height: 20),
-            FinishButton('/HomePage'),
-            SizedBox(height: 30),
+            _FinishedBlock(),
+            SizedBox(height: 80),
           ],
         ),
       ),
+    );
+  }
+}
+
+class _FinishedBlock extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text(
+          "You have succsessfully signed up!",
+          style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+          textAlign: TextAlign.center,
+        ),
+        SizedBox(height: 20),
+        FinishButton('/HomePage'),
+        SizedBox(height: 30),
+      ],
     );
   }
 }
