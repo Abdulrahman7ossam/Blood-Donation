@@ -19,8 +19,8 @@ class _HomePageState extends State<HomePage> {
           Expanded(
             child: ListView(
               children: [
-                const FactOfTheDay(),
                 const LastDonationCard(),
+                const FactOfTheDay(),
               ],
             ),
           )
@@ -105,7 +105,7 @@ class LastDonationCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: EdgeInsets.all(25.0),
+      margin: EdgeInsets.only(left: 25.0, right: 25.0, bottom: 25.0),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15.0),
       ),
