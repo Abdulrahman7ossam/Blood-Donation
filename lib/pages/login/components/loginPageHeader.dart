@@ -14,19 +14,24 @@ class LoginPageHeader extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Stack(
-              alignment: Alignment(0.5, 0.8),
+              alignment: Alignment(0.5, 0.9),
               children: [
                 Text(
                   "عطاء",
                   style: TextStyle(
                     fontSize: 64,
-                    fontWeight: FontWeight.bold,
+                    //fontWeight: FontWeight.bold,
                     color: Colors.red,
+                    fontFamily: "HarfFannan",
                   ),
                 ),
                 Text(
                   "تبرع بالدم",
-                  style: TextStyle(fontSize: 18.0, color: Color(0xFF445464)),
+                  style: TextStyle(
+                    fontSize: 18.0,
+                    color: Color(0xFF445464),
+                    fontFamily: "HarfFannan",
+                  ),
                 ),
               ],
             ),

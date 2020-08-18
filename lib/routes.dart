@@ -1,5 +1,6 @@
 import 'package:blood_donation/main.dart';
 import 'package:blood_donation/pages/homePage/homePage.dart';
+import 'package:blood_donation/pages/homePage/donatePage.dart';
 import 'package:blood_donation/pages/information/information.dart';
 import 'package:blood_donation/pages/introduction/introduction.dart';
 import 'package:blood_donation/pages/login/login.dart';
@@ -24,6 +25,7 @@ final Map<String, WidgetBuilder> routesAsWidgetBuilder =
   '/Registration3': (context) => Registration3(),
   '/Registration4': (context) => Registration4(),
   '/MyApp': (context) => MyApp(),
+  '/DonatePage': (context) => DonatePage(),
 };
 
 /// Routes as Map<String, Widget>.

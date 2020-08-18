@@ -29,6 +29,7 @@ class _DonateButtonState extends State<DonateButton> {
                 ),
               ),
               onPressed: () {
+                Navigator.pushNamed(context, '/DonatePage');
                 print("Donation button pressed!");
               },
               shape: RoundedRectangleBorder(
