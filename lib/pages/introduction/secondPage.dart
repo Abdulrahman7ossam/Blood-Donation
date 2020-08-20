@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Introduction extends StatefulWidget {
-  @override
-  _IntroductionState createState() => _IntroductionState();
-}
-
-class _IntroductionState extends State<Introduction> {
+class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,13 +8,17 @@ class _IntroductionState extends State<Introduction> {
       body: SafeArea(
         child: Column(
           children: <Widget>[
-            SizedBox(height: 40),
-            Image(image: AssetImage('images/1stblood.jpg')),
+            SizedBox(height: 5),
+            Image(
+              image: AssetImage('images/blood2.png'),
+              height: 300,
+              width: 300,
+            ),
             SizedBox(height: 30),
             Align(
               alignment: Alignment.center,
               child: Text(
-                'Donate to others',
+                'A quick process',
                 style: TextStyle(
                   fontSize: 40.0,
                   color: Colors.red.shade600,
@@ -29,7 +28,7 @@ class _IntroductionState extends State<Introduction> {
             ),
             SizedBox(height: 30),
             Text(
-              'Donate to people in need',
+              'With important health measurements',
               style: TextStyle(
                 fontSize: 22.0,
                 color: Colors.red.shade700,
@@ -37,7 +36,7 @@ class _IntroductionState extends State<Introduction> {
               ),
             ),
             Text(
-              'One drop at a time',
+              'and necessary measures',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 22.0,
@@ -54,7 +53,15 @@ class _IntroductionState extends State<Introduction> {
               child: IconButton(
                 icon: Icon(Icons.arrow_forward_ios, color: Colors.red),
                 onPressed: () {
-                  Navigator.pushNamed(context, '/SecondPage');
+                  Navigator.pushNamed(context, '/ThirdPage');
+                },
+              ),
+            ),
+            Container(
+              child: IconButton(
+                icon: Icon(Icons.arrow_back_ios, color: Colors.red),
+                onPressed: () {
+                  Navigator.pop(context);
                 },
               ),
             ),

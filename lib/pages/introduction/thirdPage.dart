@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Introduction extends StatefulWidget {
-  @override
-  _IntroductionState createState() => _IntroductionState();
-}
-
-class _IntroductionState extends State<Introduction> {
+class ThirdPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,13 +8,16 @@ class _IntroductionState extends State<Introduction> {
       body: SafeArea(
         child: Column(
           children: <Widget>[
-            SizedBox(height: 40),
-            Image(image: AssetImage('images/1stblood.jpg')),
+            Image(
+              image: AssetImage('images/blood3.png'),
+              height: 300,
+              width: 300,
+            ),
             SizedBox(height: 30),
             Align(
               alignment: Alignment.center,
               child: Text(
-                'Donate to others',
+                'Hospitals',
                 style: TextStyle(
                   fontSize: 40.0,
                   color: Colors.red.shade600,
@@ -29,7 +27,7 @@ class _IntroductionState extends State<Introduction> {
             ),
             SizedBox(height: 30),
             Text(
-              'Donate to people in need',
+              'Donate to hospitals and blood',
               style: TextStyle(
                 fontSize: 22.0,
                 color: Colors.red.shade700,
@@ -37,7 +35,7 @@ class _IntroductionState extends State<Introduction> {
               ),
             ),
             Text(
-              'One drop at a time',
+              'banks whenever possible',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 22.0,
@@ -48,15 +46,23 @@ class _IntroductionState extends State<Introduction> {
             SizedBox(
               height: 20,
               width: 300,
-              child: Divider(color: Colors.red.shade900),
+              child: Divider(
+                color: Colors.red.shade900,
+              ),
             ),
             Container(
               child: IconButton(
-                icon: Icon(Icons.arrow_forward_ios, color: Colors.red),
+                icon: Icon(Icons.home, color: Colors.red),
                 onPressed: () {
-                  Navigator.pushNamed(context, '/SecondPage');
+                  Navigator.pushNamedAndRemoveUntil(
+                      context, '/Introduction', (route) => false);
                 },
               ),
+            ),
+            Container(
+              child: IconButton(
+                  icon: Icon(Icons.arrow_back_ios, color: Colors.red),
+                  onPressed: () => Navigator.pop(context)),
             ),
           ],
         ),

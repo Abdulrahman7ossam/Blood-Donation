@@ -9,6 +9,9 @@ import 'package:blood_donation/pages/registration/registration.dart';
 import 'package:blood_donation/pages/registration/registration2.dart';
 import 'package:blood_donation/pages/registration/registration3.dart';
 import 'package:blood_donation/pages/registration/registration4.dart';
+import 'package:blood_donation/pages/introduction/secondPage.dart';
+import 'package:blood_donation/pages/introduction/thirdPage.dart';
+
 import 'package:flutter/widgets.dart';
 
 /// Routes as Map<String, WidgetBuilder>.
@@ -26,6 +29,8 @@ final Map<String, WidgetBuilder> routesAsWidgetBuilder =
   '/Registration4': (context) => Registration4(),
   '/MyApp': (context) => MyApp(),
   '/DonatePage': (context) => DonatePage(),
+  '/SecondPage': (context) => SecondPage(),
+  '/ThirdPage': (context) => ThirdPage(),
 };
 
 /// Routes as Map<String, Widget>.
