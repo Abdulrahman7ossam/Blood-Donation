@@ -1,4 +1,4 @@
-import 'package:blood_donation/pages/homePage/components/backgroundGradient.dart';
+import 'package:blood_donation/components/backgroundGradient.dart';
 import 'package:blood_donation/pages/homePage/components/donateButton.dart';
 import 'package:blood_donation/pages/homePage/components/donationsLivesSaved.dart';
 import 'package:blood_donation/pages/homePage/components/factOfTheDay.dart';
@@ -39,7 +39,7 @@ class _HomePageHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: <Widget>[
-        const BackgroundGradient(),
+        BackgroundGradient(260.0),
         DonationsLivesSavedRow(),
         NextDonationWindow(),
         DonateButton(),

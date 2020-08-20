@@ -1,3 +1,4 @@
+import 'package:blood_donation/components/backgroundGradient.dart';
 import 'package:flutter/material.dart';
 
 class SecondPage extends StatelessWidget {
@@ -8,6 +9,7 @@ class SecondPage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: <Widget>[
+            BackgroundGradient(150.0),
             SizedBox(height: 5),
             Image(
               image: AssetImage('images/blood2.png'),

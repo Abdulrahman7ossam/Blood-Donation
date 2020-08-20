@@ -1,3 +1,4 @@
+import 'package:blood_donation/components/backgroundGradient.dart';
 import 'package:flutter/material.dart';
 
 class ThirdPage extends StatelessWidget {
@@ -8,6 +9,7 @@ class ThirdPage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: <Widget>[
+            BackgroundGradient(150.0),
             Image(
               image: AssetImage('images/blood3.png'),
               height: 300,
@@ -52,11 +54,9 @@ class ThirdPage extends StatelessWidget {
             ),
             Container(
               child: IconButton(
-                icon: Icon(Icons.home, color: Colors.red),
-                onPressed: () {
-                  Navigator.pushNamedAndRemoveUntil(
-                      context, '/Introduction', (route) => false);
-                },
+                icon: Icon(Icons.arrow_forward_ios, color: Colors.red),
+                onPressed: () => Navigator.pushNamedAndRemoveUntil(
+                    context, '/Login', (route) => false),
               ),
             ),
             Container(

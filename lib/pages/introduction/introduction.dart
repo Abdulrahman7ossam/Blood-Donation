@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:blood_donation/components/backgroundGradient.dart';
 
 class Introduction extends StatefulWidget {
   @override
@@ -13,13 +14,14 @@ class _IntroductionState extends State<Introduction> {
       body: SafeArea(
         child: Column(
           children: <Widget>[
+            BackgroundGradient(150.0),
             SizedBox(height: 40),
             Image(image: AssetImage('images/1stblood.jpg')),
             SizedBox(height: 30),
             Align(
               alignment: Alignment.center,
               child: Text(
-                'Donate to others',
+                'Donate To Others',
                 style: TextStyle(
                   fontSize: 40.0,
                   color: Colors.red.shade600,
