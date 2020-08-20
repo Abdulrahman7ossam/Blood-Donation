@@ -27,8 +27,8 @@ class _NumberOfTimesBloodWasUsed extends StatelessWidget {
           "Lives Saved",
           style: TextStyle(
             color: Colors.white,
-            fontWeight: FontWeight.bold,
-            fontSize: 28,
+            fontSize: 42,
+            fontFamily: "Cream-Cake",
           ),
         ),
         Text(
@@ -36,6 +36,7 @@ class _NumberOfTimesBloodWasUsed extends StatelessWidget {
           style: TextStyle(
             color: Colors.green,
             fontWeight: FontWeight.bold,
+            fontStyle: FontStyle.italic,
             fontSize: 28,
           ),
         ),
@@ -53,8 +54,8 @@ class _NumberOfDonations extends StatelessWidget {
           "Donations",
           style: TextStyle(
             color: Colors.white,
-            fontWeight: FontWeight.bold,
-            fontSize: 28,
+            fontSize: 42,
+            fontFamily: "Cream-Cake",
           ),
         ),
         Text(
@@ -62,6 +63,7 @@ class _NumberOfDonations extends StatelessWidget {
           style: TextStyle(
             color: Colors.green,
             fontWeight: FontWeight.bold,
+            fontStyle: FontStyle.italic,
             fontSize: 28,
           ),
         ),

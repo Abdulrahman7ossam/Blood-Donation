@@ -20,11 +20,12 @@ class _DonateButtonState extends State<DonateButton> {
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  "DONATE",
+                  "Donate",
                   style: TextStyle(
-                    fontSize: 28,
+                    fontSize: 36,
                     color: Colors.red,
                     fontWeight: FontWeight.bold,
+                    fontFamily: "Cream-Cake",
                   ),
                 ),
               ),

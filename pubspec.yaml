@@ -48,6 +48,9 @@ flutter:
     - family: HarfFannan
       fonts:
         - asset: fonts/Harf-Fannan.ttf
-  #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/custom-fonts/#from-packages
+    - family: BirdsOfParadise
+      fonts:
+        - asset: fonts/BirdsOfParadise.ttf
+    - family: Cream-Cake
+      fonts:
+        - asset: fonts/Cream-Cake.ttf

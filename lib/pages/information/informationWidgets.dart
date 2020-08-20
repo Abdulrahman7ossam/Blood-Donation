@@ -31,7 +31,9 @@ class WhatToExpect extends StatelessWidget {
 1: Registration: Confidential information is gathered which will positively identify you and each of your donations.\n
 2: Interview: A medical history is taken in a private booth. You will be asked some very personal questions. Please do not be offended. We are required to ask them.\n
 3: Mini-Physical: Current pulse, blood pressure, and hemoglobin levels are determined.\n
-4: Phlebotomy: You will be seated in a reclining donor chair. A tourniquet will be applied to your arm and a suitable vein located. The site will be cleaned with an antiseptic scrub containing iodine. (Please tell us if you are allergic to iodine as we have alternate methods.) A collection needle will be gently inserted into your vein and the blood collected in a sterile attached bag for 5 to 15 minutes. When the donation is completed, you will be asked to hold a gauze over the site while keeping your arm elevated. Finally a pressure bandage will be applied to the site and you may rest and enjoy some refreshments.
+4: Phlebotomy: You will be seated in a reclining donor chair. A tourniquet will be applied to your arm and a suitable vein located. The site will be cleaned with an antiseptic scrub containing iodine. (Please tell us if you are allergic to iodine as we have alternate methods.)
+A collection needle will be gently inserted into your vein and the blood collected in a sterile attached bag for 5 to 15 minutes.
+When the donation is completed, you will be asked to hold a gauze over the site while keeping your arm elevated. Finally a pressure bandage will be applied to the site and you may rest and enjoy some refreshments.
                 ''',
     );
   }

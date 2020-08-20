@@ -14,7 +14,13 @@ class _InformationState extends State<Information> {
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            BackgroundGradient(260.0),
+            Stack(
+              alignment: Alignment.center,
+              children: [
+                BackgroundGradient(260.0),
+                Icon(Icons.info_outline, color: Colors.white, size: 180),
+              ],
+            ),
             const DonationFacts(),
             const WhatToExpect(),
             const CareAfterDonating(),

@@ -9,11 +9,13 @@ class CustomTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ExpansionTile(
-      title: Text(title,
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-          )),
+      title: Text(
+        title,
+        style: TextStyle(
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
       children: <Widget>[
         ListTile(title: Text(content, style: TextStyle(fontSize: 18))),
       ],
