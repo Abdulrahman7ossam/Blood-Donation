@@ -20,7 +20,6 @@ class LoginPageHeader extends StatelessWidget {
                   "عطاء",
                   style: TextStyle(
                     fontSize: 64,
-                    //fontWeight: FontWeight.bold,
                     color: Colors.red,
                     fontFamily: "HarfFannan",
                   ),

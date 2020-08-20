@@ -14,7 +14,7 @@ class _DonateButtonState extends State<DonateButton> {
         Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            SizedBox(height: 180),
+            SizedBox(height: 165),
             FlatButton(
               color: Colors.white,
               child: Padding(

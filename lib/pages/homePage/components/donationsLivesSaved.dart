@@ -5,7 +5,7 @@ class DonationsLivesSavedRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(height: 50),
+        SizedBox(height: 35),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [

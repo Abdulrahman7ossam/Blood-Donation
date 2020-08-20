@@ -6,15 +6,11 @@ class NextDonationWindow extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        SizedBox(height: 290),
+        SizedBox(height: 260),
         Text(
           "Donation Window",
           style: TextStyle(
-            color: Colors.white,
-            fontSize: 42,
-            //fontWeight: FontWeight.bold,
-            fontFamily: "Cream-Cake",
-          ),
+              color: Colors.white, fontSize: 42, fontFamily: "Cream-Cake"),
         ),
         Text(
           " : ",

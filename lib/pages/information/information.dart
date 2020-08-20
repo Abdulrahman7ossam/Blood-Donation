@@ -14,13 +14,7 @@ class _InformationState extends State<Information> {
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            Stack(
-              alignment: Alignment.center,
-              children: [
-                BackgroundGradient(260.0),
-                Icon(Icons.info_outline, color: Colors.white, size: 180),
-              ],
-            ),
+            const _InformationPageHeader(),
             const DonationFacts(),
             const WhatToExpect(),
             const CareAfterDonating(),
@@ -33,6 +27,21 @@ class _InformationState extends State<Information> {
           ],
         ),
       ),
+    );
+  }
+}
+
+class _InformationPageHeader extends StatelessWidget {
+  const _InformationPageHeader();
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      alignment: Alignment(0, -0.2),
+      children: [
+        BackgroundGradient(280.0),
+        Icon(Icons.info_outline, color: Colors.white, size: 180),
+      ],
     );
   }
 }
