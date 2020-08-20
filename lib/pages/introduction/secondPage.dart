@@ -51,22 +51,28 @@ class SecondPage extends StatelessWidget {
               width: 300,
               child: Divider(color: Colors.red.shade900),
             ),
-            Container(
-              child: IconButton(
-                icon: Icon(Icons.arrow_forward_ios, color: Colors.red),
-                onPressed: () {
-                  Navigator.pushNamed(context, '/ThirdPage');
-                },
-              ),
-            ),
-            Container(
-              child: IconButton(
-                icon: Icon(Icons.arrow_back_ios, color: Colors.red),
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-              ),
-            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  child: IconButton(
+                    icon: Icon(Icons.arrow_back_ios, color: Colors.red),
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                ),
+                SizedBox(width: 50),
+                Container(
+                  child: IconButton(
+                    icon: Icon(Icons.arrow_forward_ios, color: Colors.red),
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/ThirdPage');
+                    },
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),
