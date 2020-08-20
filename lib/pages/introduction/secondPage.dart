@@ -10,7 +10,7 @@ class SecondPage extends StatelessWidget {
           end: Alignment.bottomCenter,
           colors: [
             Colors.red[100],
-            Colors.red[300],
+            Colors.red[400],
           ],
         ),
       ),
@@ -82,9 +82,7 @@ class SecondPage extends StatelessWidget {
                       color: Colors.white,
                       size: 32,
                     ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/ThirdPage');
-                    },
+                    onPressed: () => Navigator.pushNamed(context, '/ThirdPage'),
                   ),
                 ),
               ],

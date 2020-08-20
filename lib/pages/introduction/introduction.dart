@@ -15,7 +15,7 @@ class _IntroductionState extends State<Introduction> {
           end: Alignment.bottomCenter,
           colors: [
             Colors.red[100],
-            Colors.red[300],
+            Colors.red[400],
           ],
         ),
       ),
