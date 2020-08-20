@@ -7,7 +7,7 @@ class DonationFacts extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomTile(
-      'Facts About Blood and Your Blood Donation:',
+      'Facts About Blood And Donating',
       '''
 The average adult has 10 to 12 pints of blood in their body.\n
 Your one donation can save up to 3 lives.\n
@@ -26,7 +26,7 @@ class WhatToExpect extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomTile(
-      'What to expect when you donate:',
+      'What To Expect When Donating',
       '''
 1: Registration: Confidential information is gathered which will positively identify you and each of your donations.\n
 2: Interview: A medical history is taken in a private booth. You will be asked some very personal questions. Please do not be offended. We are required to ask them.\n
@@ -43,7 +43,7 @@ class CareAfterDonating extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomTile(
-      'Care After Donating:',
+      'Care After Donating',
       '''
 1: Relax and enjoy the refreshments provided. You normally have 10 to 12 pints of blood in your body and have just donated about one. It will only take a few minutes before your body adjusts to the change. The fluid volume will be replaced in a few days, but the red cells will take several weeks. Remember, we have not taken enough to hurt you.\n
 2: If you smoke, do not do so for at least 30 minutes. Doing so before then may make you lightheaded.\n
@@ -62,7 +62,7 @@ class BasicRequierments extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomTile(
-      'Basic Requirements:',
+      'Basic Requirements',
       '''
 1: Be in generally good health and feeling well.\n
 2: Be at least 18 years of age; upper age 60.\n
@@ -81,7 +81,7 @@ class DonationFreq extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomTile(
-      'Donation Frequency (may vary):',
+      'Donation Frequency',
       '''
 1: You will be deferred permanently from donation if you have ever tested positive for HIV.\n
 2: You have ever injected yourself with drugs or other substances not prescribed by a physician.\n
@@ -98,7 +98,7 @@ class RiskAndBenefits extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomTile(
-      'What are the benefits and risks?',
+      'Risks And Benefits Of Donating',
       '''
 Autologous blood donation is most useful for surgical procedures where blood is commonly used and for patients for whom blood donation is safe. Surgeon will be able to tell how likely it is that you might be transfused during a specific procedure.\n
 Many surgical procedures do not usually require blood transfusions and so autologous blood donation is not necessary.\n
@@ -114,7 +114,7 @@ class SpecialConsiderations extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomTile(
-      'Special considerations before coming in to donate:',
+      'Special Considerations Before Donating',
       '''
 1: If you have a cold, have taken antibiotics within the last 48 hours (except for prophylactic use) or have had dental work within the last 48 hours, you will not be able to donate and should reschedule your appointment.\n
 2: Blood donation may worsen some seizure disorders or heart conditions. You may not donate if you have had seizures.\n
@@ -130,7 +130,7 @@ class DonationGuidelines extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomTile(
-      'Donation Guidelines:',
+      'Donation Guidelines',
       '''
 You must have a medical order from your doctor prior to the first donation.\n
 You must plan ahead (3-6 weeks) so there will be enough time to donate the needed number of units.\n
