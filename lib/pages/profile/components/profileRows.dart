@@ -11,6 +11,25 @@ class ProfileRows extends StatelessWidget {
         SizedBox(height: 50),
         const _DonationStatus(),
         SizedBox(height: 50),
+        const _NumnberOfDonations(),
+      ],
+    );
+  }
+}
+
+class _NumnberOfDonations extends StatelessWidget {
+  const _NumnberOfDonations();
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Icon(Icons.favorite, color: Colors.red, size: 60),
+        SizedBox(width: 10),
+        _customText("Blood Type"),
+        SizedBox(width: 130),
+        _customText("A+"),
       ],
     );
   }
