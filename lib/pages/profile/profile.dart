@@ -50,7 +50,7 @@ class _ProfileState extends State<Profile> {
               padding: const EdgeInsets.only(left: 20, right: 20),
               child: Column(
                 children: [
-                  ProfileRows(),
+                  const ProfileRows(),
                 ],
               ),
             ),

@@ -1,19 +1,24 @@
 import 'package:flutter/material.dart';
 
 class ProfileRows extends StatelessWidget {
+  const ProfileRows();
+
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        _BloodType(),
-        SizedBox(height: 40),
-        _DonationStatus(),
+        const _BloodType(),
+        SizedBox(height: 50),
+        const _DonationStatus(),
+        SizedBox(height: 50),
       ],
     );
   }
 }
 
 class _BloodType extends StatelessWidget {
+  const _BloodType();
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -21,15 +26,17 @@ class _BloodType extends StatelessWidget {
       children: [
         Icon(Icons.favorite, color: Colors.red, size: 60),
         SizedBox(width: 10),
-        customText("Blood Type"),
+        _customText("Blood Type"),
         SizedBox(width: 130),
-        customText("A+"),
+        _customText("A+"),
       ],
     );
   }
 }
 
 class _DonationStatus extends StatelessWidget {
+  const _DonationStatus();
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -37,15 +44,15 @@ class _DonationStatus extends StatelessWidget {
       children: [
         Icon(Icons.settings_backup_restore, color: Colors.green, size: 60),
         SizedBox(width: 10),
-        customText("Donation Status"),
+        _customText("Donation Status"),
         SizedBox(width: 40),
-        customText("Eligble"),
+        _customText("Eligble"),
       ],
     );
   }
 }
 
-Widget customText(String text) {
+Widget _customText(String text) {
   return Text(
     text,
     style: TextStyle(
