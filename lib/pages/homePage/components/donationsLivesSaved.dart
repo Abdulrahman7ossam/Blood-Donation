@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:blood_donation/data/data.dart';
 
 class DonationsLivesSavedRow extends StatelessWidget {
   @override
@@ -32,7 +33,7 @@ class _NumberOfTimesBloodWasUsed extends StatelessWidget {
           ),
         ),
         Text(
-          "1",
+          livesSaved,
           style: TextStyle(
             color: Colors.green,
             fontWeight: FontWeight.bold,
@@ -59,7 +60,7 @@ class _NumberOfDonations extends StatelessWidget {
           ),
         ),
         Text(
-          "4",
+          numberOfDonations,
           style: TextStyle(
             color: Colors.green,
             fontWeight: FontWeight.bold,

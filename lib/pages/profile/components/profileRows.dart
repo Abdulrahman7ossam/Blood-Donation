@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:blood_donation/data/data.dart';
 
 class ProfileRows extends StatelessWidget {
   const ProfileRows();
@@ -29,7 +30,7 @@ class _NumnberOfDonations extends StatelessWidget {
         SizedBox(width: 10),
         _customText("Donations"),
         SizedBox(width: 155),
-        _customText("4"),
+        _customText(numberOfDonations),
       ],
     );
   }
@@ -47,7 +48,7 @@ class _BloodType extends StatelessWidget {
         SizedBox(width: 10),
         _customText("Blood Type"),
         SizedBox(width: 130),
-        _customText("A+"),
+        _customText(bloodType),
       ],
     );
   }
@@ -65,7 +66,7 @@ class _DonationStatus extends StatelessWidget {
         SizedBox(width: 10),
         _customText("Donation Status"),
         SizedBox(width: 40),
-        _customText("Eligble"),
+        _customText(donationStatus),
       ],
     );
   }

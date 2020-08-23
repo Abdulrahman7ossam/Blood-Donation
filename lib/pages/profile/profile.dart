@@ -2,6 +2,7 @@ import 'package:blood_donation/pages/profile/components/profileBackground.dart';
 import 'package:blood_donation/pages/profile/components/profileRows.dart';
 import 'package:blood_donation/pages/profile/components/userAvatar.dart';
 import 'package:flutter/material.dart';
+import 'package:blood_donation/data/data.dart';
 
 class Profile extends StatefulWidget {
   @override
@@ -9,9 +10,6 @@ class Profile extends StatefulWidget {
 }
 
 class _ProfileState extends State<Profile> {
-  final name = "Abdelrahman Kassem".toUpperCase();
-  final age = "21";
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
