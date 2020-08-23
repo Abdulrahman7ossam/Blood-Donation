@@ -4,14 +4,16 @@ import 'package:blood_donation/data/data.dart';
 class ProfileRows extends StatelessWidget {
   const ProfileRows();
 
+  final double _gapBetweenRows = 90.0;
+
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         const _BloodType(),
-        SizedBox(height: 50),
+        SizedBox(height: _gapBetweenRows),
         const _DonationStatus(),
-        SizedBox(height: 50),
+        SizedBox(height: _gapBetweenRows),
         const _NumnberOfDonations(),
       ],
     );

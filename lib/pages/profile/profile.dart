@@ -34,7 +34,7 @@ class _ProfileState extends State<Profile> {
             left: 135,
             bottom: 540,
             child: Text(
-              "Heroes come in all types and sizes.",
+              quote,
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 16,
