@@ -1,6 +1,6 @@
 import 'package:blood_donation/main.dart';
 import 'package:blood_donation/pages/homePage/homePage.dart';
-import 'package:blood_donation/pages/homePage/donatePage.dart';
+import 'package:blood_donation/pages/donate/donatePage.dart';
 import 'package:blood_donation/pages/information/information.dart';
 import 'package:blood_donation/pages/introduction/introduction.dart';
 import 'package:blood_donation/pages/login/login.dart';
