@@ -8,7 +8,7 @@ Widget customNavigationBar(int selectedIndex, Function onItemTapped) {
     items: navigationBarItems,
     elevation: 0,
     currentIndex: selectedIndex,
-    selectedItemColor: Colors.blue,
+    selectedItemColor: Colors.red[300],
     onTap: onItemTapped,
     backgroundColor: Colors.transparent,
     unselectedFontSize: 14.0,
