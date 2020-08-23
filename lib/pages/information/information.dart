@@ -39,7 +39,7 @@ class _InformationPageHeader extends StatelessWidget {
     return Stack(
       alignment: Alignment(0, -0.2),
       children: [
-        BackgroundGradient(280.0),
+        BackgroundGradient(280.0, true),
         Icon(Icons.info_outline, color: Colors.white, size: 180),
       ],
     );

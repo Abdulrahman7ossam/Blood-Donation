@@ -39,7 +39,7 @@ class _HomePageHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: <Widget>[
-        BackgroundGradient(280.0),
+        BackgroundGradient(280.0, true),
         DonationsLivesSavedRow(),
         NextDonationWindow(),
         DonateButton(),

@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 
 class BackgroundGradient extends StatelessWidget {
-  BackgroundGradient(this.height);
+  BackgroundGradient(this.height, this.curve);
 
   final double height;
+  final bool curve;
 
   @override
   Widget build(BuildContext context) {
     return ClipPath(
-      clipper: _MyClipper(),
+      clipper: curve == true ? _MyClipper() : null,
       child: Container(
         height: height,
         width: double.infinity,
