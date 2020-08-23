@@ -25,11 +25,11 @@ class _NumnberOfDonations extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Icon(Icons.favorite, color: Colors.red, size: 60),
+        Icon(Icons.accessibility_new, color: Colors.blue, size: 60),
         SizedBox(width: 10),
-        _customText("Blood Type"),
-        SizedBox(width: 130),
-        _customText("A+"),
+        _customText("Donations"),
+        SizedBox(width: 155),
+        _customText("4"),
       ],
     );
   }
