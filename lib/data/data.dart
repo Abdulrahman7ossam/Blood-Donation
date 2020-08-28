@@ -1,7 +1,7 @@
 /// user date found in app.
 
-String name = "Abdelrahman Kassem".toUpperCase();
-String age = "21";
+String name = "Abdulla".toUpperCase();
+String age = "38";
 String numberOfDonations = "4";
 String livesSaved = "1";
 String bloodType = "A+";
